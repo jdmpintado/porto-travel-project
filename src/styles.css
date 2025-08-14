@@ -8,16 +8,6 @@ body {
     margin: 0 auto;
 }
 
-.section {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-}
-
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/vista-aerea-ponte-dom-luis.jpg");
     background-repeat: no-repeat;
@@ -64,12 +54,65 @@ header a {
     display: inline-block;
 }
 
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+.img-responsive {
+    max-width: 100%;
+    display: block;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 64px;
+}
+
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
+main {
+    background-color: white;
+    color: #272044;
+}
+
+main h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    opacity: 0.3;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+main h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+main p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+
 footer {
     background-image: linear-gradient(rgba(39, 32, 68, 0.9), rgba(39, 32, 68, 0.9)),
         url("/images/rio-douro.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px;
     color: white;
 }
 
@@ -85,7 +128,6 @@ footer p {
     font-size: 16px;
     line-height: 1.5;
     opacity: 0.7;
-    margin-right: 20px;
 }
 
 footer ul {
@@ -103,7 +145,7 @@ footer a {
     opacity: 0.7;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
     header {
         padding: 60px 0;
     }
@@ -118,5 +160,14 @@ footer a {
 
     header h3 {
         font-size: 12px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+    }
+
+    section {
+        padding: 30px;
     }
 }
