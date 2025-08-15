@@ -15,6 +15,7 @@ header {
     color: white;
     text-align: center;
     padding: 200px 0px;
+    filter: hue-rotate(20deg);
 }
 
 header h1 {
@@ -57,7 +58,7 @@ header a {
 section {
     max-width: 100%;
     margin: 0 auto;
-    padding: 100px;
+    padding: 80px;
 }
 
 section.secondary {
@@ -68,6 +69,70 @@ section.secondary {
     max-width: 100%;
     display: block;
     border-radius: 10px;
+    filter: drop-shadow(8px 8px 10px) sepia(60%);
+}
+
+.button-container-first-section {
+    margin-bottom: 10px;
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn-bookmark {
+    background-color: white;
+    border-color: rgba(39, 32, 68, 0.1);
+    border-radius: 10px;
+    padding: 5px 7px;
+    margin: 10px 8px 0 0;
+}
+
+.bookmark {
+    text-decoration: none;
+    color: #272044;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    opacity: 0.3;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    border: 1px solid lightgrey;
+    margin-bottom: 20px;
+}
+
+td {
+    border: 1px solid lightgrey;
+    padding: 10px 15px;
+}
+
+.first-column {
+    width: auto;
+}
+
+.table-subheading {
+    margin: 4px 0 0;
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+.table-note {
+    font-size: 14px;
+    font-style: italic;
+    margin: 4px 0;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
 }
 
 .embed {
@@ -114,6 +179,7 @@ section.secondary {
 .card-header img {
     border-radius: 0px;
     border-top-left-radius: 10px;
+    filter: brightness(120%);
 }
 
 .card-body {
@@ -257,6 +323,10 @@ footer a {
 
     .grid-3-columns {
         margin: 40px 0;
+    }
+
+    .button-container-first-section {
+        text-align: center;
     }
 
     .card {
